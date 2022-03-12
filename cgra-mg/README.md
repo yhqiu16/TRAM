@@ -15,8 +15,8 @@ Template-based CGRA modeling and generation with Chisel
 ### Clone the repository
 
 ```sh
-git clone git@github.com:TRAM.git
-cd TRAM/cgra-framework/cgra-mg
+git clone https://github.com/yhtmp/TRAM
+cd TRAM/cgra-mg
 ```
 
 ### Build and run
