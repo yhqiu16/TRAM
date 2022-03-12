@@ -1,0 +1,51 @@
+Input: A
+Input: B
+Input: C
+Input: H
+Input: I
+Input: J
+Input: N
+Input: O
+Input: P
+Input: Q
+Input: R
+Input: S
+Input: T
+Input: U
+Input: X
+Input: E
+Mul1 = Mul(N,O)
+Mul2 = Mul(P,Q)
+Mul3 = Mul(A,B)
+Mul4 = Mul(X,C)
+Mul5 = Mul(H,I)
+Mul6 = Mul(E,J)
+Mul7 = Mul(R,S)
+Mul8 = Mul(T,U)
+Add9 = Add(Mul1,Mul2)
+Add10 = Add(Mul3,Mul4)
+Add11 = Add(Mul5,Mul6)
+Add12 = Add(Mul7,Mul8)
+Add13 = Add(Add10,1)
+Add14 = Add(Add11,1)
+Mul15 = Mul(Add13,1)
+Mul16 = Mul(Add14,1)
+Mul17 = Mul(Add13,1)
+Mul18 = Mul(Add14,1)
+Add19 = Add(Mul15,Mul16) 
+Add20 = Add(Mul17,Mul18)
+Mul21 = Mul(Add19,1)
+Mul22 = Mul(Add20,1)
+Mul23 = Mul(Add19,1)
+Mul24 = Mul(Add20,1)
+Add25 = Add(Mul21,Mul22)
+Add26 = Add(Mul23,Mul24)
+Add27 = Add(Add9,Add25)
+Add28 = Add(Add12,Add26)
+Output: Add27
+Output: Add28
+
+
+
+
+

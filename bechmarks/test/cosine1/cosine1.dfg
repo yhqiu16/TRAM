@@ -1,0 +1,71 @@
+Input: A
+Input: B
+Input: C
+Input: D
+Input: E
+Input: F
+Input: G
+Input: H
+Input: I
+Input: J
+Input: K
+Input: L
+Input: M
+Input: N
+Input: O
+Input: P
+sub1 = Sub(A,B)
+sub2 = Sub(C,D)
+mul1 = Mul(sub1,1)
+mul2 = Mul(sub2,1)
+add7 = Add(mul1,mul2)
+sub5 = Sub(mul1,mul2)
+sub6 = Sub(E,F)
+sub11 = Sub(G,H)
+add11 = Add(sub11,add7)
+sub10 = Sub(sub11,add7)
+add10 = Add(sub5,sub6)
+sub9 = Sub(sub5,sub6)
+mul9 = Mul(add11,1)
+mul10 = Mul(add11,1)
+mul11 = Mul(add10,1)
+mul12 = Mul(sub10,1)
+mul13 = Mul(add10,1)
+mul14 = Mul(sub10,1)
+mul15 = Mul(sub9,1)
+mul16 = Mul(sub9,1)
+sub14 = Sub(mul9,mul11)
+add13 = Add(mul10,mul13)
+sub12 = Sub(mul12,mul15)
+add12 = Add(mul14,mul16)
+add1 = Add(I,J)
+add2 = Add(K,L)
+add3 = Add(M,N)
+add4 = Add(O,P)
+sub4 = Sub(add1,add2)
+add6 = Add(add1,add2)
+sub3 = Sub(add3,add4)
+add5 = Add(add3,add4)
+mul3 = Mul(sub4,1)
+mul4 = Mul(sub3,1)
+mul5 = Mul(sub4,1)
+mul6 = Mul(sub3,1)
+mul7 = Mul(add6,1)
+mul8 = Mul(add5,add5)
+add9 = Add(mul3,mul4)
+sub8 = Sub(mul5,mul6)
+sub7 = Sub(mul7,mul8)
+add8 = Add(mul7,mul8) 
+
+Output:sub12
+Output:sub14
+Output:add12
+Output:add13
+Output:sub8
+Output:sub7
+Output:add8
+Output:add9
+
+
+
+

@@ -1,0 +1,388 @@
+{
+  "name": "G",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "N0",
+      "label": "AL0",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 1,
+      "name": "N1",
+      "label": "AL1",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 2,
+      "name": "N2",
+      "label": "AL2",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 3,
+      "name": "N3",
+      "label": "AL3",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 4,
+      "name": "N4",
+      "label": "AL4",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 5,
+      "name": "N5",
+      "label": "AL5",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 6,
+      "name": "N6",
+      "label": "AL6",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 7,
+      "name": "N7",
+      "label": "AL7",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 8,
+      "name": "N8",
+      "label": "(Mul 8)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 9,
+      "name": "N9",
+      "label": "(Mul 9)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 10,
+      "name": "N10",
+      "label": "(Mul 10)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 11,
+      "name": "N11",
+      "label": "(Mul 11)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 12,
+      "name": "N12",
+      "label": "(Mul 12)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 13,
+      "name": "N13",
+      "label": "(Mul 13)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 14,
+      "name": "N14",
+      "label": "(Mul 14)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 15,
+      "name": "N15",
+      "label": "(Mul 15)",
+      "opcode": "MUL"
+    },
+    {
+      "_gvid": 16,
+      "name": "N16",
+      "label": "(Add 16)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 17,
+      "name": "N17",
+      "label": "(Add 17)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 18,
+      "name": "N18",
+      "label": "(Add 18)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 19,
+      "name": "N19",
+      "label": "(Add 19)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 20,
+      "name": "N20",
+      "label": "(Add 20)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 21,
+      "name": "N21",
+      "label": "(Add 21)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 22,
+      "name": "N36",
+      "label": "(Add 36)",
+      "opcode": "ADD"
+    },
+    {
+      "_gvid": 23,
+      "name": "N39",
+      "label": "V",
+      "opcode": "output"
+    },
+    {
+      "_gvid": 24,
+      "name": "N40",
+      "label": "AR0",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 25,
+      "name": "N41",
+      "label": "AR1",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 26,
+      "name": "N42",
+      "label": "AR2",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 27,
+      "name": "N43",
+      "label": "AR3",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 28,
+      "name": "N44",
+      "label": "AR4",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 29,
+      "name": "N45",
+      "label": "AR5",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 30,
+      "name": "N46",
+      "label": "AR6",
+      "opcode": "input"
+    },
+    {
+      "_gvid": 31,
+      "name": "N47",
+      "label": "AR7",
+      "opcode": "input"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 8,
+      "color": "black"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 9,
+      "color": "black"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 10,
+      "color": "black"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 11,
+      "color": "black"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 12,
+      "color": "black"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 13,
+      "color": "black"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 14,
+      "color": "black"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 15,
+      "color": "black"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 16,
+      "color": "black"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 16,
+      "color": "black"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 17,
+      "color": "black"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 17,
+      "color": "black"
+    },
+    {
+      "_gvid": 12,
+      "tail": 12,
+      "head": 18,
+      "color": "black"
+    },
+    {
+      "_gvid": 13,
+      "tail": 13,
+      "head": 18,
+      "color": "black"
+    },
+    {
+      "_gvid": 14,
+      "tail": 14,
+      "head": 19,
+      "color": "black"
+    },
+    {
+      "_gvid": 15,
+      "tail": 15,
+      "head": 19,
+      "color": "black"
+    },
+    {
+      "_gvid": 16,
+      "tail": 16,
+      "head": 20,
+      "color": "black"
+    },
+    {
+      "_gvid": 17,
+      "tail": 17,
+      "head": 20,
+      "color": "black"
+    },
+    {
+      "_gvid": 18,
+      "tail": 18,
+      "head": 21,
+      "color": "black"
+    },
+    {
+      "_gvid": 19,
+      "tail": 19,
+      "head": 21,
+      "color": "black"
+    },
+    {
+      "_gvid": 20,
+      "tail": 20,
+      "head": 22,
+      "color": "black"
+    },
+    {
+      "_gvid": 21,
+      "tail": 21,
+      "head": 22,
+      "color": "black"
+    },
+    {
+      "_gvid": 22,
+      "tail": 22,
+      "head": 23,
+      "color": "black"
+    },
+    {
+      "_gvid": 23,
+      "tail": 24,
+      "head": 8,
+      "color": "black"
+    },
+    {
+      "_gvid": 24,
+      "tail": 25,
+      "head": 9,
+      "color": "black"
+    },
+    {
+      "_gvid": 25,
+      "tail": 26,
+      "head": 10,
+      "color": "black"
+    },
+    {
+      "_gvid": 26,
+      "tail": 27,
+      "head": 11,
+      "color": "black"
+    },
+    {
+      "_gvid": 27,
+      "tail": 28,
+      "head": 12,
+      "color": "black"
+    },
+    {
+      "_gvid": 28,
+      "tail": 29,
+      "head": 13,
+      "color": "black"
+    },
+    {
+      "_gvid": 29,
+      "tail": 30,
+      "head": 14,
+      "color": "black"
+    },
+    {
+      "_gvid": 30,
+      "tail": 31,
+      "head": 15,
+      "color": "black"
+    }
+  ]
+}

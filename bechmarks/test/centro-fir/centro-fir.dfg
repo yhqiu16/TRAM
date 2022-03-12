@@ -1,0 +1,48 @@
+Input: AL0
+Input: AR0
+Input: C0
+Input: AL1
+Input: AR1
+Input: C1
+Input: AL2
+Input: AR2
+Input: C2
+Input: AL3
+Input: AR3
+Input: C3
+Input: B
+Input: B1
+A0 = Add(AL0, AR0)
+A1 = Add(AL1, AR1)
+A2 = Add(AL2, AR2)
+A3 = Add(AL3, AR3)
+
+REAL0  = Mul(A0, B)
+REAL1  = Mul(A1, B)
+REAL2  = Mul(A2, B)
+REAL3  = Mul(A3, B)
+IMAG0  = Mul(A0, B1)
+IMAG1  = Mul(A1, B1)
+IMAG2  = Mul(A2, B1)
+IMAG3  = Mul(A3, B1)
+DELTA00 = Sub(REAL0, IMAG0)
+DELTA01 = Add(REAL0, IMAG0)
+DELTA10 = Sub(REAL1, IMAG1)
+DELTA11 = Add(REAL1, IMAG1)
+DELTA20 = Sub(REAL2, IMAG2)
+DELTA21 = Add(REAL2, IMAG2)
+DELTA30 = Sub(REAL3, IMAG3)
+DELTA31 = Add(REAL3, IMAG3)
+DELTA0  = Add(DELTA00,DELTA01)
+DELTA1  = Add(DELTA10,DELTA11)
+DELTA2  = Add(DELTA20,DELTA21)
+DELTA3  = Add(DELTA30,DELTA31)
+O0 = Add(C0, DELTA0)
+O1 = Add(C1, DELTA1)
+O2 = Add(C2, DELTA2)
+O3 = Add(C3, DELTA3)
+
+Output: O0
+Output: O1
+Output: O2
+Output: O3

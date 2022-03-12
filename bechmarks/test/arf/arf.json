@@ -1,0 +1,712 @@
+{
+  "name": "arf",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "MUL_1",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 1,
+      "name": "MUL_2",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 2,
+      "name": "MUL_3",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 3,
+      "name": "MUL_4",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 4,
+      "name": "MUL_5",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 5,
+      "name": "MUL_6",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 6,
+      "name": "MUL_7",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 7,
+      "name": "MUL_8",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 8,
+      "name": "ADD_9",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 9,
+      "name": "ADD_10",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 10,
+      "name": "ADD_11",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 11,
+      "name": "ADD_12",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 12,
+      "name": "ADD_13",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 13,
+      "name": "ADD_14",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 14,
+      "name": "MUL_15",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 15,
+      "name": "MUL_16",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 16,
+      "name": "MUL_17",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 17,
+      "name": "MUL_18",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 18,
+      "name": "ADD_19",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 19,
+      "name": "ADD_20",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 20,
+      "name": "MUL_21",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 21,
+      "name": "MUL_22",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 22,
+      "name": "MUL_23",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 23,
+      "name": "MUL_24",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 24,
+      "name": "ADD_25",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 25,
+      "name": "ADD_26",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 26,
+      "name": "ADD_27",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 27,
+      "name": "ADD_28",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 28,
+      "name": "OUT_29",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "OUTPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 29,
+      "name": "OUT_30",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "OUTPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 30,
+      "name": "IN_31",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 31,
+      "name": "IN_32",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 32,
+      "name": "IN_33",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 33,
+      "name": "IN_34",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 34,
+      "name": "IN_35",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 35,
+      "name": "IN_36",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 36,
+      "name": "IN_37",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 37,
+      "name": "IN_38",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 38,
+      "name": "IN_39",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 39,
+      "name": "IN_40",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 40,
+      "name": "IN_41",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 41,
+      "name": "IN_42",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 42,
+      "name": "IN_43",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 43,
+      "name": "IN_44",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 44,
+      "name": "IN_45",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 45,
+      "name": "IN_46",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 8,
+      "name": "0"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 8,
+      "name": "1"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 9,
+      "name": "2"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 9,
+      "name": "3"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 10,
+      "name": "4"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 10,
+      "name": "5"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 11,
+      "name": "6"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 11,
+      "name": "7"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 26,
+      "name": "8"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 12,
+      "name": "9"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 13,
+      "name": "10"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 27,
+      "name": "11"
+    },
+    {
+      "_gvid": 12,
+      "tail": 12,
+      "head": 14,
+      "name": "12"
+    },
+    {
+      "_gvid": 13,
+      "tail": 12,
+      "head": 16,
+      "name": "13"
+    },
+    {
+      "_gvid": 14,
+      "tail": 13,
+      "head": 15,
+      "name": "14"
+    },
+    {
+      "_gvid": 15,
+      "tail": 13,
+      "head": 17,
+      "name": "15"
+    },
+    {
+      "_gvid": 16,
+      "tail": 14,
+      "head": 18,
+      "name": "16"
+    },
+    {
+      "_gvid": 17,
+      "tail": 15,
+      "head": 18,
+      "name": "17"
+    },
+    {
+      "_gvid": 18,
+      "tail": 16,
+      "head": 19,
+      "name": "18"
+    },
+    {
+      "_gvid": 19,
+      "tail": 17,
+      "head": 19,
+      "name": "19"
+    },
+    {
+      "_gvid": 20,
+      "tail": 18,
+      "head": 20,
+      "name": "20"
+    },
+    {
+      "_gvid": 21,
+      "tail": 18,
+      "head": 22,
+      "name": "21"
+    },
+    {
+      "_gvid": 22,
+      "tail": 19,
+      "head": 21,
+      "name": "22"
+    },
+    {
+      "_gvid": 23,
+      "tail": 19,
+      "head": 23,
+      "name": "23"
+    },
+    {
+      "_gvid": 24,
+      "tail": 20,
+      "head": 24,
+      "name": "24"
+    },
+    {
+      "_gvid": 25,
+      "tail": 21,
+      "head": 24,
+      "name": "25"
+    },
+    {
+      "_gvid": 26,
+      "tail": 22,
+      "head": 25,
+      "name": "26"
+    },
+    {
+      "_gvid": 27,
+      "tail": 23,
+      "head": 25,
+      "name": "27"
+    },
+    {
+      "_gvid": 28,
+      "tail": 24,
+      "head": 26,
+      "name": "28"
+    },
+    {
+      "_gvid": 29,
+      "tail": 25,
+      "head": 27,
+      "name": "29"
+    },
+    {
+      "_gvid": 30,
+      "tail": 26,
+      "head": 28,
+      "name": "30"
+    },
+    {
+      "_gvid": 31,
+      "tail": 27,
+      "head": 29,
+      "name": "31"
+    },
+    {
+      "_gvid": 32,
+      "tail": 30,
+      "head": 0,
+      "name": "32"
+    },
+    {
+      "_gvid": 33,
+      "tail": 31,
+      "head": 0,
+      "name": "33"
+    },
+    {
+      "_gvid": 34,
+      "tail": 32,
+      "head": 1,
+      "name": "34"
+    },
+    {
+      "_gvid": 35,
+      "tail": 33,
+      "head": 1,
+      "name": "35"
+    },
+    {
+      "_gvid": 36,
+      "tail": 34,
+      "head": 2,
+      "name": "36"
+    },
+    {
+      "_gvid": 37,
+      "tail": 35,
+      "head": 2,
+      "name": "37"
+    },
+    {
+      "_gvid": 38,
+      "tail": 36,
+      "head": 3,
+      "name": "38"
+    },
+    {
+      "_gvid": 39,
+      "tail": 37,
+      "head": 3,
+      "name": "39"
+    },
+    {
+      "_gvid": 40,
+      "tail": 38,
+      "head": 4,
+      "name": "40"
+    },
+    {
+      "_gvid": 41,
+      "tail": 39,
+      "head": 4,
+      "name": "41"
+    },
+    {
+      "_gvid": 42,
+      "tail": 40,
+      "head": 5,
+      "name": "42"
+    },
+    {
+      "_gvid": 43,
+      "tail": 41,
+      "head": 5,
+      "name": "43"
+    },
+    {
+      "_gvid": 44,
+      "tail": 42,
+      "head": 6,
+      "name": "44"
+    },
+    {
+      "_gvid": 45,
+      "tail": 43,
+      "head": 6,
+      "name": "45"
+    },
+    {
+      "_gvid": 46,
+      "tail": 44,
+      "head": 7,
+      "name": "46"
+    },
+    {
+      "_gvid": 47,
+      "tail": 45,
+      "head": 7,
+      "name": "47"
+    }
+  ]
+}

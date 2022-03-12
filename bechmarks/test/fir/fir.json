@@ -1,0 +1,664 @@
+{
+  "name": "fir",
+  "directed": true,
+  "strict": false,
+  "_subgraph_cnt": 0,
+  "objects": [
+    {
+      "_gvid": 0,
+      "name": "MUL_0",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 1,
+      "name": "MUL_1",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 2,
+      "name": "MUL_2",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 3,
+      "name": "MUL_3",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 4,
+      "name": "MUL_4",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 5,
+      "name": "MUL_5",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 6,
+      "name": "MUL_6",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 7,
+      "name": "MUL_7",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 8,
+      "name": "MUL_8",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 9,
+      "name": "MUL_9",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 10,
+      "name": "MUL_10",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "MUL",
+      "style": "filled"
+    },
+    {
+      "_gvid": 11,
+      "name": "ADD_11",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 12,
+      "name": "ADD_12",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 13,
+      "name": "ADD_13",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 14,
+      "name": "ADD_14",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 15,
+      "name": "ADD_15",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 16,
+      "name": "ADD_16",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 17,
+      "name": "ADD_17",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 18,
+      "name": "ADD_18",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 19,
+      "name": "ADD_19",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 20,
+      "name": "ADD_20",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "ADD",
+      "style": "filled"
+    },
+    {
+      "_gvid": 21,
+      "name": "IN_12",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 22,
+      "name": "COF_13",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 23,
+      "name": "IN_14",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 24,
+      "name": "COF_15",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 25,
+      "name": "IN_16",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 26,
+      "name": "COF_17",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 27,
+      "name": "IN_18",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 28,
+      "name": "COF_19",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 29,
+      "name": "IN_20",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 30,
+      "name": "COF_21",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 31,
+      "name": "IN_22",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 32,
+      "name": "COF_23",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 33,
+      "name": "IN_24",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 34,
+      "name": "COF_25",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 35,
+      "name": "IN_26",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 36,
+      "name": "COF_27",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 37,
+      "name": "IN_28",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 38,
+      "name": "COF_29",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 39,
+      "name": "IN_30",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 40,
+      "name": "COF_31",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 41,
+      "name": "IN_32",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 42,
+      "name": "COF_33",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "INPUT",
+      "style": "filled"
+    },
+    {
+      "_gvid": 43,
+      "name": "OUT_1",
+      "color": "blue2",
+      "fontcolor": "white",
+      "label": "\\N",
+      "opcode": "OUTPUT",
+      "style": "filled"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 0,
+      "head": 11,
+      "name": "6"
+    },
+    {
+      "_gvid": 1,
+      "tail": 1,
+      "head": 11,
+      "name": "7"
+    },
+    {
+      "_gvid": 2,
+      "tail": 2,
+      "head": 12,
+      "name": "9"
+    },
+    {
+      "_gvid": 3,
+      "tail": 3,
+      "head": 13,
+      "name": "16"
+    },
+    {
+      "_gvid": 4,
+      "tail": 4,
+      "head": 13,
+      "name": "17"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 14,
+      "name": "18"
+    },
+    {
+      "_gvid": 6,
+      "tail": 6,
+      "head": 17,
+      "name": "30"
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 17,
+      "name": "31"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 16,
+      "name": "29"
+    },
+    {
+      "_gvid": 9,
+      "tail": 9,
+      "head": 19,
+      "name": "39"
+    },
+    {
+      "_gvid": 10,
+      "tail": 10,
+      "head": 20,
+      "name": "40"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 12,
+      "name": "8"
+    },
+    {
+      "_gvid": 12,
+      "tail": 12,
+      "head": 14,
+      "name": "19"
+    },
+    {
+      "_gvid": 13,
+      "tail": 13,
+      "head": 15,
+      "name": "20"
+    },
+    {
+      "_gvid": 14,
+      "tail": 14,
+      "head": 15,
+      "name": "21"
+    },
+    {
+      "_gvid": 15,
+      "tail": 15,
+      "head": 16,
+      "name": "28"
+    },
+    {
+      "_gvid": 16,
+      "tail": 16,
+      "head": 18,
+      "name": "33"
+    },
+    {
+      "_gvid": 17,
+      "tail": 17,
+      "head": 18,
+      "name": "32"
+    },
+    {
+      "_gvid": 18,
+      "tail": 18,
+      "head": 19,
+      "name": "38"
+    },
+    {
+      "_gvid": 19,
+      "tail": 19,
+      "head": 20,
+      "name": "41"
+    },
+    {
+      "_gvid": 20,
+      "tail": 20,
+      "head": 43,
+      "name": "42"
+    },
+    {
+      "_gvid": 21,
+      "tail": 21,
+      "head": 0,
+      "name": "0"
+    },
+    {
+      "_gvid": 22,
+      "tail": 22,
+      "head": 0,
+      "name": "1"
+    },
+    {
+      "_gvid": 23,
+      "tail": 23,
+      "head": 1,
+      "name": "2"
+    },
+    {
+      "_gvid": 24,
+      "tail": 24,
+      "head": 1,
+      "name": "3"
+    },
+    {
+      "_gvid": 25,
+      "tail": 25,
+      "head": 2,
+      "name": "4"
+    },
+    {
+      "_gvid": 26,
+      "tail": 26,
+      "head": 2,
+      "name": "5"
+    },
+    {
+      "_gvid": 27,
+      "tail": 27,
+      "head": 3,
+      "name": "10"
+    },
+    {
+      "_gvid": 28,
+      "tail": 28,
+      "head": 3,
+      "name": "11"
+    },
+    {
+      "_gvid": 29,
+      "tail": 29,
+      "head": 4,
+      "name": "12"
+    },
+    {
+      "_gvid": 30,
+      "tail": 30,
+      "head": 4,
+      "name": "13"
+    },
+    {
+      "_gvid": 31,
+      "tail": 31,
+      "head": 5,
+      "name": "14"
+    },
+    {
+      "_gvid": 32,
+      "tail": 32,
+      "head": 5,
+      "name": "15"
+    },
+    {
+      "_gvid": 33,
+      "tail": 33,
+      "head": 6,
+      "name": "22"
+    },
+    {
+      "_gvid": 34,
+      "tail": 34,
+      "head": 6,
+      "name": "23"
+    },
+    {
+      "_gvid": 35,
+      "tail": 35,
+      "head": 7,
+      "name": "24"
+    },
+    {
+      "_gvid": 36,
+      "tail": 36,
+      "head": 7,
+      "name": "25"
+    },
+    {
+      "_gvid": 37,
+      "tail": 37,
+      "head": 8,
+      "name": "26"
+    },
+    {
+      "_gvid": 38,
+      "tail": 38,
+      "head": 8,
+      "name": "27"
+    },
+    {
+      "_gvid": 39,
+      "tail": 39,
+      "head": 9,
+      "name": "34"
+    },
+    {
+      "_gvid": 40,
+      "tail": 40,
+      "head": 9,
+      "name": "35"
+    },
+    {
+      "_gvid": 41,
+      "tail": 41,
+      "head": 10,
+      "name": "36"
+    },
+    {
+      "_gvid": 42,
+      "tail": 42,
+      "head": 10,
+      "name": "37"
+    }
+  ]
+}

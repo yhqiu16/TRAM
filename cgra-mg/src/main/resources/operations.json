@@ -1,0 +1,108 @@
+{
+  "Operations" : [ {
+    "name" : "PASS",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 1,
+    "numRes" : 1,
+    "OPC" : 0
+  }, {
+    "name" : "ADD",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 1
+  }, {
+    "name" : "SUB",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 2
+  }, {
+    "name" : "MUL",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 3
+  }, {
+    "name" : "AND",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 4
+  }, {
+    "name" : "OR",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 5
+  }, {
+    "name" : "XOR",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 6
+  }, {
+    "name" : "SHL",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 7
+  }, {
+    "name" : "LSHR",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 8
+  }, {
+    "name" : "ASHR",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 9
+  }, {
+    "name" : "EQ",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 10
+  }, {
+    "name" : "NE",
+    "commutative" : 1,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 11
+  }, {
+    "name" : "LT",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 12
+  }, {
+    "name" : "LE",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 2,
+    "numRes" : 1,
+    "OPC" : 13
+  }, {
+    "name" : "SEL",
+    "commutative" : 0,
+    "latency" : 1,
+    "numOperands" : 3,
+    "numRes" : 1,
+    "OPC" : 14
+  } ]
+}

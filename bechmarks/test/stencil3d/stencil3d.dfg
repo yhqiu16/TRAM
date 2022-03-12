@@ -1,0 +1,66 @@
+Input: sub0_v0_0
+Input: sub0_v0_1
+Input: sub0_v0_2
+Input: sub0_v0_3
+Input: sub0_v1_0
+Input: sub0_v1_1
+Input: sub0_v1_2
+Input: sub0_v1_3
+Input: sub0_v2
+Input: sub0_v3_0
+Input: sub0_v3_1
+Input: sub0_v3_2
+Input: sub0_v3_3
+Input: sub0_v4
+Input: sub0_v5_0
+Input: sub0_v5_1
+Input: sub0_v5_2
+Input: sub0_v5_3
+Input: sub0_v6_0
+Input: sub0_v6_1
+Input: sub0_v6_2
+Input: sub0_v6_3
+Input: sub0_v7_0
+Input: sub0_v7_1
+Input: sub0_v7_2
+Input: sub0_v7_3
+Input: sub0_v8_0
+Input: sub0_v8_1
+Input: sub0_v8_2
+Input: sub0_v8_3
+sub0_v9_0 = Add(sub0_v0_0, sub0_v1_0)
+sub0_v9_1 = Add(sub0_v0_1, sub0_v1_1)
+sub0_v9_2 = Add(sub0_v0_2, sub0_v1_2)
+sub0_v9_3 = Add(sub0_v0_3, sub0_v1_3)
+sub0_v10_0 = Add(sub0_v9_0, sub0_v8_0)
+sub0_v10_1 = Add(sub0_v9_1, sub0_v8_1)
+sub0_v10_2 = Add(sub0_v9_2, sub0_v8_2)
+sub0_v10_3 = Add(sub0_v9_3, sub0_v8_3)
+sub0_v11_0 = Add(sub0_v10_0, sub0_v7_0)
+sub0_v11_1 = Add(sub0_v10_1, sub0_v7_1)
+sub0_v11_2 = Add(sub0_v10_2, sub0_v7_2)
+sub0_v11_3 = Add(sub0_v10_3, sub0_v7_3)
+sub0_v12_0 = Mul(sub0_v4, sub0_v3_0)
+sub0_v12_1 = Mul(sub0_v4, sub0_v3_1)
+sub0_v12_2 = Mul(sub0_v4, sub0_v3_2)
+sub0_v12_3 = Mul(sub0_v4, sub0_v3_3)
+sub0_v13_0 = Add(sub0_v11_0, sub0_v6_0)
+sub0_v13_1 = Add(sub0_v11_1, sub0_v6_1)
+sub0_v13_2 = Add(sub0_v11_2, sub0_v6_2)
+sub0_v13_3 = Add(sub0_v11_3, sub0_v6_3)
+sub0_v14_0 = Add(sub0_v13_0, sub0_v5_0)
+sub0_v14_1 = Add(sub0_v13_1, sub0_v5_1)
+sub0_v14_2 = Add(sub0_v13_2, sub0_v5_2)
+sub0_v14_3 = Add(sub0_v13_3, sub0_v5_3)
+sub0_v15_0 = Mul(sub0_v2, sub0_v14_0)
+sub0_v15_1 = Mul(sub0_v2, sub0_v14_1)
+sub0_v15_2 = Mul(sub0_v2, sub0_v14_2)
+sub0_v15_3 = Mul(sub0_v2, sub0_v14_3)
+sub0_v16_0 = Add(sub0_v15_0, sub0_v12_0)
+sub0_v16_1 = Add(sub0_v15_1, sub0_v12_1)
+sub0_v16_2 = Add(sub0_v15_2, sub0_v12_2)
+sub0_v16_3 = Add(sub0_v15_3, sub0_v12_3)
+Output: sub0_v16_0
+Output: sub0_v16_1
+Output: sub0_v16_2
+Output: sub0_v16_3
