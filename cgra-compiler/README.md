@@ -1,7 +1,7 @@
 CGRA-Compiler
 =======================
 
-CGRA mapping flow including placement and routing, timing scheduling, optimization, visualization, and configuration generation
+CGRA mapping flow including placement and routing, data synchronization, optimization, visualization, and configuration generation
 
 
 ## Getting Started
@@ -16,8 +16,8 @@ CGRA mapping flow including placement and routing, timing scheduling, optimizati
 ### Clone the repository
 
 ```sh
-git clone git@github.com:TRAM.git
-cd TRAM/cgra-framework/cgra-compiler
+git clone https://github.com/yhtmp/TRAM
+cd TRAM/cgra-compiler
 ```
 
 ### Build
