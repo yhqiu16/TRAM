@@ -5,7 +5,7 @@ Template-based Reconfigurable Architecture Modeling Framework, including:
 
 1. CGRA-MG: CGRA modeling and generation based on Chisel. Design a flexible CGRA template, and generate architecture IR and Verilog. 
 
-2. CGRA-Compiler: CGRA mapper, mapping DFGs to CGRA in batches. The mapping flow includes placement and routing, timing scheduling, optimization, visualization, and configuration generation.
+2. CGRA-Compiler: CGRA mapper, mapping DFGs to CGRA in batches. The mapping flow includes placement and routing, data synchronization, optimization, visualization, and configuration generation.
 
 3. Bechmarks: DFGs in Json format derived from dot files.
 
@@ -14,20 +14,20 @@ Template-based Reconfigurable Architecture Modeling Framework, including:
 
 ### Dependencies
 
-#### JDK 8 or newer (for CGRA-MG)
+##### JDK 8 or newer (for CGRA-MG)
 
-#### SBT (for CGRA-MG)
+##### SBT (for CGRA-MG)
 
-#### CMake  (for CGRA-Compiler)
+##### CMake  (for CGRA-Compiler)
 
-#### C++-11 (for CGRA-Compiler)
+##### C++-11 (for CGRA-Compiler)
 
 
 ### Clone the repository
 
 ```sh
-git clone git@github.com:TRAM.git
-cd TRAM/cgra-framework
+git clone https://github.com/yhtmp/TRAM
+cd TRAM
 ```
 
 
