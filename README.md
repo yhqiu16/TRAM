@@ -12,6 +12,7 @@ Template-based Reconfigurable Architecture Modeling Framework, including:
 
 ## Getting Started
 
+
 ### Dependencies
 
 ##### JDK 8 or newer (for CGRA-MG)
@@ -23,12 +24,14 @@ Template-based Reconfigurable Architecture Modeling Framework, including:
 ##### C++-11 (for CGRA-Compiler)
 
 
+
 ### Clone the repository
 
 ```sh
 git clone https://github.com/yhtmp/TRAM
 cd TRAM
 ```
+
 
 
 ### CGRA-MG
@@ -46,6 +49,7 @@ Or using sbt command:
 cd cgra-mg
 sbt "runMain mg.CGRAMG -td ./test_run_dir"
 ```
+
 
 
 ### CGRA-Compiler
