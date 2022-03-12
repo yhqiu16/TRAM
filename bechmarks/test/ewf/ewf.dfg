@@ -1,0 +1,49 @@
+Input: A
+Input: B
+Input: C
+Input: D
+add1 = Add(A,B)
+add2 = Add(C,D)
+add3 = Add(add1,1)
+add4 = Add(add3,1)
+add5 = Add(add4,add2)
+mul6 = Mul(add5,1)
+mul7 = Mul(add5,1)
+add8 = Add(mul6,add3)
+add9 = Add(mul7,add2)
+add10 = Add(add3,add8)
+add11 = Add(add8,add5)
+add12 = Add(add9,add2)
+mul13 = Mul(add10,1)
+add14 = Add(add11,add9)
+mul15 = Mul(add12,1)
+add16 = Add(mul13,add1)
+add17 = Add(mul15,1)
+add18 =  Add(add1,add16)
+add19 = Add(add16,add8)
+add20 = Add(add9,add17)
+add21 = Add(add17,1)
+mul22 = Mul(add18,1)
+add23 = Add(add19,1)
+add24 = Add(add20,1)
+mul25 = Mul(add21,1)
+add26 = Add(mul22,1)
+mul27 = Mul(add23,1)
+mul28 = Mul(add24,1)
+add29 = Add(add17,mul25)
+add30 = Add(add26,add16)
+add31 = Add(mul27,1)
+add32 = Add(mul28,1)
+add33 = Add(add31,add23)
+add34 = Add(add24,add32)
+
+
+Output:add14
+Output:add29
+Output:add30
+Output:add33
+Output:add34
+
+
+
+

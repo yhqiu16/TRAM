@@ -1,0 +1,87 @@
+Digraph G {
+"N0"[label = "\N\nlat=1"];
+"N1"[label = "\N\nlat=1"];
+"N2"[label = "\N\nlat=5"];
+"N3"[label = "\N\nlat=0"];
+"N4"[label = "\N\nlat=0"];
+"N5"[label = "\N\nlat=0"];
+"N6"[label = "\N\nlat=0"];
+"N7"[label = "\N\nlat=0"];
+"N8"[label = "\N\nlat=0"];
+"N29"[label = "\N\nlat=6"];
+"N21"->"N29"
+"N30"[label = "\N\nlat=6"];
+"N25"->"N30"
+"N31"[label = "\N\nlat=6"];
+"N22"->"N31"
+"N32"[label = "\N\nlat=7"];
+"N26"->"N32"
+"N33"[label = "\N\nlat=9"];
+"N23"->"N33"
+"N34"[label = "\N\nlat=10"];
+"N27"->"N34"
+"N35"[label = "\N\nlat=9"];
+"N24"->"N35"
+"N36"[label = "\N\nlat=8"];
+"N28"->"N36"
+"N9"[label = "\N\nlat=1"];
+"N4"->"N9";
+"N8"->"N9";
+"N10"[label = "\N\nlat=1"];
+"N5"->"N10";
+"N8"->"N10";
+"N11"[label = "\N\nlat=2"];
+"N6"->"N11";
+"N8"->"N11";
+"N12"[label = "\N\nlat=3"];
+"N7"->"N12";
+"N8"->"N12";
+"N13"[label = "\N\nlat=1"];
+"N4"->"N13";
+"N8"->"N13";
+"N14"[label = "\N\nlat=4"];
+"N5"->"N14";
+"N8"->"N14";
+"N15"[label = "\N\nlat=3"];
+"N6"->"N15";
+"N8"->"N15";
+"N16"[label = "\N\nlat=4"];
+"N7"->"N16";
+"N8"->"N16";
+"N17"[label = "\N\nlat=5"];
+"N9"->"N17";
+"N13"->"N17";
+"N18"[label = "\N\nlat=5"];
+"N10"->"N18";
+"N14"->"N18";
+"N19"[label = "\N\nlat=4"];
+"N11"->"N19";
+"N15"->"N19";
+"N20"[label = "\N\nlat=5"];
+"N12"->"N20";
+"N16"->"N20";
+"N21"[label = "\N\nlat=6"];
+"N0"->"N21";
+"N17"->"N21";
+"N22"[label = "\N\nlat=6"];
+"N1"->"N22";
+"N18"->"N22";
+"N23"[label = "\N\nlat=9"];
+"N2"->"N23";
+"N19"->"N23";
+"N24"[label = "\N\nlat=6"];
+"N3"->"N24";
+"N20"->"N24";
+"N25"[label = "\N\nlat=6"];
+"N0"->"N25";
+"N17"->"N25";
+"N26"[label = "\N\nlat=6"];
+"N1"->"N26";
+"N18"->"N26";
+"N27"[label = "\N\nlat=10"];
+"N2"->"N27";
+"N19"->"N27";
+"N28"[label = "\N\nlat=6"];
+"N3"->"N28";
+"N20"->"N28";
+}

@@ -1,0 +1,38 @@
+Input: AL0
+Input: AL1
+Input: AL2
+Input: AL3
+Input: AL4
+Input: AL5
+Input: AL6
+Input: AL7
+Input: AR0
+Input: AR1
+Input: AR2
+Input: AR3
+Input: AR4
+Input: AR5
+Input: AR6
+Input: AR7
+
+  A0 = Mul(AL0, AR0);
+  A1 = Mul(AL1, AR1);
+  A2 = Mul(AL2, AR2);
+  A3 = Mul(AL3, AR3);
+  A4 = Mul(AL4, AR4);
+  A5 = Mul(AL5, AR5);
+  A6 = Mul(AL6, AR6);
+  A7 = Mul(AL7, AR7);
+
+  RA0 = Add(A0, A1);
+  RA1 = Add(A2, A3);
+  RA2 = Add(A4, A5);
+  RA3 = Add(A6, A7);
+
+  SA0 = Add(RA0, RA1);
+  SA1 = Add(RA2, RA3);
+  
+  V = Add(SA0, SA1);
+
+Output: V
+

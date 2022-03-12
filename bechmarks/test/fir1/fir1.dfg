@@ -1,0 +1,47 @@
+Input: A
+Input: B
+Input: C
+Input: D
+Input: E
+Input: F
+Input: G
+Input: H
+Input: I
+Input: J
+Input: K
+Input: L
+Input: M
+Input: N
+Input: O
+Input: P
+add11 = Add(A,B)
+add14 = Add(C,D)
+add17 = Add(E,F)
+add20 = Add(G,H)
+add23 = Add(I,J)
+add26 = Add(K,L)
+add29 = Add(M,N)
+add32 = Add(O,P)
+mul33 =  Mul(add11,1)
+mul34 =  Mul(add14,1)
+mul35 =  Mul(add17,1)
+mul36 =  Mul(add20,1)
+mul37 =  Mul(add23,1)
+mul38 =  Mul(add26,1)
+mul39 =  Mul(add29,1)
+mul40 =  Mul(add32,1)
+add41 =  Add(mul33,mul34)
+add42 =  Add(mul35,add41)
+add43 =  Add(mul36,add42)
+add44 =  Add(mul37,add43)
+add45 =  Add(mul38,add44)
+add46 =  Add(mul39,add45)
+add47 =  Add(mul40,add46)
+
+Output: add47
+
+
+
+
+
+

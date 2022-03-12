@@ -1,0 +1,74 @@
+Input: AL0
+Input: AL1
+Input: AL2
+Input: AL3
+Input: AL4
+Input: AL5
+Input: AL6
+Input: AL7
+Input: AR0
+Input: AR1
+Input: AR2
+Input: AR3
+Input: AR4
+Input: AR5
+Input: AR6
+Input: AR7
+Input: BL0
+Input: BL1
+Input: BL2
+Input: BL3
+Input: BL4
+Input: BL5
+Input: BL6
+Input: BL7
+Input: BR0
+Input: BR1
+Input: BR2
+Input: BR3
+Input: BR4
+Input: BR5
+Input: BR6
+Input: BR7
+
+  A0 = Mul(AL0, AR0);
+  A1 = Mul(AL1, AR1);
+  A2 = Mul(AL2, AR2);
+  A3 = Mul(AL3, AR3);
+  A4 = Mul(AL4, AR4);
+  A5 = Mul(AL5, AR5);
+  A6 = Mul(AL6, AR6);
+  A7 = Mul(AL7, AR7);
+
+  RA0 = Add(A0, A1);
+  RA1 = Add(A2, A3);
+  RA2 = Add(A4, A5);
+  RA3 = Add(A6, A7);
+
+  SA0 = Add(RA0, RA1);
+  SA1 = Add(RA2, RA3);
+
+  B0 = Mul(BL0, BR0);
+  B1 = Mul(BL1, BR1);
+  B2 = Mul(BL2, BR2);
+  B3 = Mul(BL3, BR3);
+  B4 = Mul(BL4, BR4);
+  B5 = Mul(BL5, BR5);
+  B6 = Mul(BL6, BR6);
+  B7 = Mul(BL7, BR7);
+
+  RB0 = Add(B0, B1);
+  RB1 = Add(B2, B3);
+  RB2 = Add(B4, B5);
+  RB3 = Add(B6, B7);
+
+  SB0 = Add(RB0, RB1);
+  SB1 = Add(RB2, RB3);
+
+  UA = Add(SA0, SA1);
+  UB = Add(SB0, SB1);
+
+  V = Add(UA, UB);
+
+Output: V
+

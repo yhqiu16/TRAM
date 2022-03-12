@@ -1,0 +1,83 @@
+Input: input0
+Input: input1
+Input: input2
+Input: input3
+Input: input4
+Input: input5
+Input: input6
+Input: input7
+Input: input8
+Input: input9
+Input: input10
+Input: input11
+Input: input12
+Input: input13
+Input: input14
+Input: input15
+Input: input16
+Input: input17
+Input: input18
+Input: input19
+Input: input20
+Input: input21
+Input: input22
+Input: input23
+Input: input24
+Input: input25
+Input: input26
+Input: input27
+Input: input28
+Input: input29
+Input: input30
+Input: input31
+sub0 = Sub(input0, input1)
+sub1 = Sub(input2, input3)
+sub2 = Sub(input4, input5)
+sub3 = Sub(input6, input7)
+add4 = Add(input8, input9)
+add5 = Add(input10, input11)
+add6 = Add(input12, input13)
+add7 = Add(input14, input15)
+mul8 = Mul(input16, sub1)
+mul9 = Mul(input17, sub2)
+add10 = Add(mul8, mul9)
+sub11 = Sub(mul8, mul9)
+add12 = Add(sub0, add10)
+sub13 = Sub(sub0, add10)
+sub14 = Sub(sub3, 1)
+add15 = Add(sub3, sub11)
+mul16 = Mul(input18, add12)
+mul17 = Mul(input19, add12)
+mul18 = Mul(input20, sub13)
+mul19 = Mul(input21, sub13)
+mul20 = Mul(input22, sub14)
+mul21 = Mul(input23, sub14)
+mul22 = Mul(input24, add15)
+mul23 = Mul(input25, add15)
+sub24 = Sub(mul16, mul22)
+sub25 = Sub(mul18, mul20)
+add26 = Add(mul19, mul21)
+add27 = Add(mul17, mul23)
+sub28 = Sub(add4, add7)
+sub29 = Sub(add5, add6)
+add30 = Add(add5, add6)
+add31 = Add(add4, add7)
+mul32 = Mul(input26, sub28)
+mul33 = Mul(input27, sub28)
+mul34 = Mul(input28, sub29)
+mul35 = Mul(input29, sub29)
+mul36 = Mul(input30, add30)
+mul37 = Mul(input31, add31)
+add38 = Add(mul32,mul34)
+sub39 = Sub(mul33,mul35)
+sub40 = Sub(mul36,mul37)
+add41 = Add(mul36,mul37)
+
+Output: sub24
+Output: sub25
+Output: add26
+Output: add27
+Output: add38
+Output: sub39
+Output: sub40
+Output: add41
