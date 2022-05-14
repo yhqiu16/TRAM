@@ -2,29 +2,38 @@ Input64: sub0_v0_0
 Input64: sub0_v0_1
 Input64: sub0_v0_2
 Input64: sub0_v0_3
-Input64: sub0_v1
+Input64: sub0_v1_0
+Input64: sub0_v1_1
+Input64: sub0_v1_2
+Input64: sub0_v1_3
 Input64: sub0_v2_0
 Input64: sub0_v2_1
 Input64: sub0_v2_2
 Input64: sub0_v2_3
-Input64: sub0_v3
+Input64: sub0_v3_0
+Input64: sub0_v3_1
+Input64: sub0_v3_2
+Input64: sub0_v3_3
 Input64: sub0_v4_0
 Input64: sub0_v4_1
 Input64: sub0_v4_2
 Input64: sub0_v4_3
-Input64: sub0_v5
-sub0_v10_0 = Sub(sub0_v5, sub0_v4_0)
-sub0_v10_1 = Sub(sub0_v5, sub0_v4_1)
-sub0_v10_2 = Sub(sub0_v5, sub0_v4_2)
-sub0_v10_3 = Sub(sub0_v5, sub0_v4_3)
-sub0_v11_0 = Sub(sub0_v3, sub0_v2_0)
-sub0_v11_1 = Sub(sub0_v3, sub0_v2_1)
-sub0_v11_2 = Sub(sub0_v3, sub0_v2_2)
-sub0_v11_3 = Sub(sub0_v3, sub0_v2_3)
-sub0_v12_0 = Sub(sub0_v1, sub0_v0_0)
-sub0_v12_1 = Sub(sub0_v1, sub0_v0_1)
-sub0_v12_2 = Sub(sub0_v1, sub0_v0_2)
-sub0_v12_3 = Sub(sub0_v1, sub0_v0_3)
+Input64: sub0_v5_0
+Input64: sub0_v5_1
+Input64: sub0_v5_2
+Input64: sub0_v5_3
+sub0_v10_0 = Sub(sub0_v5_0, sub0_v4_0)
+sub0_v10_1 = Sub(sub0_v5_1, sub0_v4_1)
+sub0_v10_2 = Sub(sub0_v5_2, sub0_v4_2)
+sub0_v10_3 = Sub(sub0_v5_3, sub0_v4_3)
+sub0_v11_0 = Sub(sub0_v3_0, sub0_v2_0)
+sub0_v11_1 = Sub(sub0_v3_1, sub0_v2_1)
+sub0_v11_2 = Sub(sub0_v3_2, sub0_v2_2)
+sub0_v11_3 = Sub(sub0_v3_3, sub0_v2_3)
+sub0_v12_0 = Sub(sub0_v1_0, sub0_v0_0)
+sub0_v12_1 = Sub(sub0_v1_1, sub0_v0_1)
+sub0_v12_2 = Sub(sub0_v1_2, sub0_v0_2)
+sub0_v12_3 = Sub(sub0_v1_3, sub0_v0_3)
 sub0_v13_0 = Mul(sub0_v10_0, sub0_v10_0)
 sub0_v13_1 = Mul(sub0_v10_1, sub0_v10_1)
 sub0_v13_2 = Mul(sub0_v10_2, sub0_v10_2)

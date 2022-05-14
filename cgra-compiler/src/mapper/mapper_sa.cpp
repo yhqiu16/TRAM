@@ -49,10 +49,12 @@ bool MapperSA::pnrSyncOpt(){
             break;
         }
         // PnR and Data Synchronization 
-        bool res = pnrSync(maxItersMapSched, temp, (!succeed));
-        if(!res){ // fail to map
+        int res = pnrSync(maxItersMapSched, temp, (!succeed));
+        if(res == 0){ // fail to map
             spdlog::debug("PnR and Data Synchronization failed!");
             continue;
+        }else if(res == -1){ // preMapCheck fail
+            break;
         }
         succeed = true;
         spdlog::info("PnR and Data Synchronization succeed, start optimization");
@@ -94,7 +96,8 @@ bool MapperSA::pnrSyncOpt(){
 
 
 // PnR and Data Synchronization
-bool MapperSA::pnrSync(int maxIters, int temp, bool modifyDfg){
+// return -1 : preMapCheck failed; 0 : fail; 1 : success
+int MapperSA::pnrSync(int maxIters, int temp, bool modifyDfg){
     int initTemp = temp;
     ADG* adg = _mapping->getADG();
     DFG* dfg = _mapping->getDFG();
@@ -105,7 +108,7 @@ bool MapperSA::pnrSync(int maxIters, int temp, bool modifyDfg){
     // int restartIters = 20;     // if not improved for restartIters, restart from the cached status
     int lastImprvIter = 0;
     // int lastRestartIter = 0;
-    bool succeed = false;
+    int succeed = 0;
     bool update = false;
     int newVio;
     int oldVio = 0x7fffffff;
@@ -129,7 +132,7 @@ bool MapperSA::pnrSync(int maxIters, int temp, bool modifyDfg){
         spdlog::info("Complete data synchronization, check latency violation");
         newVio = curMapping->totalViolation(); // latency violations
         if(newVio == 0){
-            succeed = true;
+            succeed = 1;
             *_mapping = *curMapping; // keep better mapping status, ##### DEFAULT "=" IS OK #####
             break;
         }
@@ -172,6 +175,7 @@ bool MapperSA::pnrSync(int maxIters, int temp, bool modifyDfg){
             // newDfg->print();                
             setDFG(newDfg, true);  //  update the _dfg and initialize                                                           
             if(!preMapCheck(adg, newDfg)){
+                succeed = -1;
                 break;
             }
             delete curMapping; 
@@ -195,7 +199,7 @@ bool MapperSA::pnrSync(int maxIters, int temp, bool modifyDfg){
     }
     delete curMapping; 
     delete lastAcceptMapping;
-    if(succeed){
+    if(succeed > 0){
         spdlog::warn("Max latency: {}", _mapping->maxLat());
     }    
     return succeed;
@@ -476,7 +480,7 @@ int MapperSA::objFunc(Mapping* mapping){
     int maxEdgeLen = 0;
     int totalEdgeLen = 0;
     mapping->getEdgeLen(totalEdgeLen, maxEdgeLen);
-    int obj = mapping->maxLat() * 100 +
+    int obj = mapping->maxLat() * 500 +
               maxEdgeLen * 10 + totalEdgeLen;
     return obj;
 }

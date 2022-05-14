@@ -1,0 +1,133 @@
+##########################################################
+CGRA-8x8: 1 track, half reged, 2-2-4, output_ib 1
+##########################################################
+
+Parse Operations: ../cgra-mg/src/main/resources/operations.json
+Parse ADG: ../cgra-mg/src/main/resources/cgra_adg.json
+Parse DFG: ../bechmarks/test/arf/arf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 10
+Running time(s): 1.397
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/centro-fir/centro-fir.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 8
+Running time(s): 7.878
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/cosine1/cosine1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 9
+Running time(s): 2.37
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/ewf/ewf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 14
+Running time(s): 5.673
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/fir1/fir1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 11
+Running time(s): 1.003
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/resnet1/resnet1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 6
+Running time(s): 1.295
+Succeed to map DFG to ADG!<<<<<<
+
+=============================================
+Succeed to map all the DFGs, number:  6
+=============================================
+
+
+##########################################################
+CGRA-8x8: 1 track, full reged, 2-2-4, output_ib 1
+##########################################################
+
+Parse Operations: ../cgra-mg/src/main/resources/operations.json
+Parse ADG: ../cgra-mg/src/main/resources/cgra_adg.json
+Parse DFG: ../bechmarks/test/arf/arf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 14
+Running time(s): 1.234
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/centro-fir/centro-fir.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 12
+Running time(s): 8.594
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/cosine1/cosine1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 14
+Running time(s): 5.973
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/ewf/ewf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 16
+Running time(s): 19.009
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/fir1/fir1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 14
+Running time(s): 0.927
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/resnet1/resnet1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 11
+Running time(s): 0.619
+Succeed to map DFG to ADG!<<<<<<
+
+=============================================
+Succeed to map all the DFGs, number:  6
+=============================================
+
+
+##########################################################
+CGRA-8x8: 2 track, half reged, 2-2-4, output_ib 2
+##########################################################
+
+Parse Operations: ../cgra-mg/src/main/resources/operations.json
+Parse ADG: ../cgra-mg/src/main/resources/cgra_adg.json
+Parse DFG: ../bechmarks/test/fft/fft.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 7
+Running time(s): 128.244
+Succeed to map DFG to ADG!<<<<<<
+
+
+##########################################################
+CGRA-8x8: 2 track, full reged, 2-2-4, output_ib 2
+##########################################################
+
+Parse Operations: ../cgra-mg/src/main/resources/operations.json
+Parse ADG: ../cgra-mg/src/main/resources/cgra_adg.json
+Parse DFG: ../bechmarks/test/fft/fft.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 10
+Running time(s): 131.756
+Succeed to map DFG to ADG!<<<<<<
+

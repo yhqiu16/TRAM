@@ -1,0 +1,51 @@
+##########################################################
+DSAGEN16x16, Benchmark: md
+##########################################################
+
+8 1 30 51 0 10 17 60 22 50 38 56 26 37 28 49 45 5 52 63 34 14 54 59 |8 1 30 51 0 10 17 60 22 50 38 56 26 37 28 49 45 5 52 63 34 14 54 59 Iter: 3242, time:3528.71, kRPS:0.1, left:   0, lat: 120, vio: 33, mis: 12, ovr: 0, agg_ovr: 0, util: 1, obj:921752, ins: 24/24, outs: 3/3, insts: 77,77, pts:0, links:9752, edge-links:1501  , all mapped
+8 27 29 51 0 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 34 14 54 45 |8 27 29 51 0 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 34 14 54 45 Iter: 3292, time:3583.18, kRPS:0.1, left:   0, lat: 106, vio: 36, mis: 8, ovr: 0, agg_ovr: 0, util: 1, obj:899552, ins: 24/24, outs: 3/3, insts: 77,77, pts:0, links:8952, edge-links:1373  , all mapped
+8 27 29 51 0 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 |8 27 29 51 0 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 Iter: 3293, time:3584.79, kRPS:0.1, left:   0, lat: 111, vio: 24, mis: 3, ovr: 0, agg_ovr: 0, util: 1, obj:560412, ins: 24/24, outs: 3/3, insts: 77,77, pts:0, links:9312, edge-links:1418  , all mapped
+8 27 29 51 0 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 |8 27 29 51 0 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 Iter: 3294, time:3586.01, kRPS:0.1, left:   0, lat: 111, vio: 10, mis: 1, ovr: 0, agg_ovr: 0, util: 1, obj:240516, ins: 24/24, outs: 3/3, insts: 77,77, pts:0, links:9416, edge-links:1422  , all mapped
+8 27 29 51 1 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 |8 27 29 51 1 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 Iter: 3296, time:3586.50, kRPS:0.1, left:   0, lat: 111, vio: 10, mis: 1, ovr: 0, agg_ovr: 0, util: 1, obj:240508, ins: 24/24, outs: 3/3, insts: 77,77, pts:0, links:9408, edge-links:1421  , all mapped
+8 27 29 51 1 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 |8 27 29 51 1 24 17 55 22 44 35 49 21 42 33 58 38 26 52 56 31 14 54 45 Iter: 3297, time:3588.27, kRPS:0.1, left:   0, lat: 111, vio: 0, mis: 0, ovr: 0, agg_ovr: 0, util: 1, obj:20660, ins: 24/24, outs: 3/3, insts: 77,77, pts:0, links:9560, edge-links:1452  , all mapped, mismatch == 0
+Breaking at Iter 3297, candidates success / candidates tried:  118082/118082
+sched_time: 3588.3055 seconds
+latency: 124
+lat-mismatch-max: 20
+lat-mismatch-sum: 199
+overprov-max: 0
+overprov-sum: 0
+** Output Vector Latencies **
+sub0_v28 to OP16 sz0: 117 
+TMP17 to OP26 sz0: 124 
+sub0_v29 to OP31 sz0: 105 
+Performance: 154
+FU: 1.29211e+06um2 1343.72mw
+Network: 699146um2 174.786mw
+Sync: 1.34151e+06um2 922mw
+Memory: 39325um2 12.14mw
+
+##########################################################
+DSAGEN16x16, Benchmark: resnet2
+##########################################################
+feasible checked
+Start Schedule
+58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 |58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 Iter:    0, time:17.00, kRPS:0.1, left:   0, lat:  85, vio: 7, mis: 2, ovr: 0, agg_ovr: 0, util: 1, obj:193236, ins: 32/32, outs: 1/1, insts: 31,31, pts:0, links:4736, edge-links:592  , all mapped
+58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 |58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 Iter:    2, time:17.70, kRPS:0.1, left:   0, lat:  85, vio: 5, mis: 1, ovr: 0, agg_ovr: 0, util: 1, obj:133260, ins: 32/32, outs: 1/1, insts: 31,31, pts:0, links:4760, edge-links:595  , all mapped
+58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 |58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 Iter:    3, time:18.34, kRPS:0.1, left:   0, lat:  74, vio: 2, mis: 1, ovr: 0, agg_ovr: 0, util: 1, obj:71984, ins: 32/32, outs: 1/1, insts: 31,31, pts:0, links:4584, edge-links:573  , all mapped
+58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 |58 33 10 49 17 25 51 42 12 41 32 56 16 21 30 45 62 44 5 1 13 24 31 37 63 54 14 3 22 26 29 35 Iter:    5, time:18.71, kRPS:0.1, left:   0, lat:  74, vio: 2, mis: 1, ovr: 0, agg_ovr: 0, util: 1, obj:71928, ins: 32/32, outs: 1/1, insts: 31,31, pts:0, links:4528, edge-links:566  , all mapped
+18 59 39 49 12 25 51 42 19 32 43 58 30 20 60 45 62 47 5 1 13 38 31 29 63 54 14 0 22 9 40 35 |18 59 39 49 12 25 51 42 19 32 43 58 30 20 60 45 62 47 5 1 13 38 31 29 63 54 14 0 22 9 40 35 Iter:   37, time:37.18, kRPS:0.1, left:   0, lat:  50, vio: 0, mis: 0, ovr: 0, agg_ovr: 0, util: 1, obj:9024, ins: 32/32, outs: 1/1, insts: 31,31, pts:0, links:4024, edge-links:503  , all mapped, mismatch == 0
+Breaking at Iter 37, candidates success / candidates tried:  2301/2301
+sched_time: 37.1986 seconds
+latency: 50
+lat-mismatch-max: 5
+lat-mismatch-sum: 21
+overprov-max: 0
+overprov-sum: 0
+** Output Vector Latencies **
+V to OP20 sz0: 50 
+Performance: 62
+FU: 1.29211e+06um2 1343.72mw
+Network: 699146um2 174.786mw
+Sync: 1.34151e+06um2 922mw
+Memory: 39325um2 12.14mw

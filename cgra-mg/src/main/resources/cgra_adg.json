@@ -8,6 +8,7 @@
   "operations" : [ "PASS", "ADD", "SUB", "MUL", "AND", "OR", "XOR" ],
   "cfg_data_width" : 32,
   "num_output" : 16,
+  "num_input_ib" : 1,
   "cfg_addr_width" : 12,
   "data_width" : 32,
   "num_track" : 1,
@@ -2657,6 +2658,7 @@
     "num_ipin_per_opin" : 4
   },
   "num_input" : 16,
+  "num_output_ob" : 1,
   "connections" : {
     "645" : [ 123, "GPE", 0, 115, "GIB", 7 ],
     "892" : [ 20, "GIB", 3, 38, "GIB", 1 ],

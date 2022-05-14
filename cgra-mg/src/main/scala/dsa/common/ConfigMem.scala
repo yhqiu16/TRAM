@@ -40,7 +40,7 @@ class ConfigMem(regWidth: Int, regNum: Int, cfgDataWidth: Int) extends Module {
         if(i == 0){
           regs(0) := Cat(regs(0)(regWidth-1, (i+1)*cfgDataWidth), io.cfg_data)
         }else if(i == num-1){
-          regs(0) := Cat(io.cfg_data, regs(0)(cfgDataWidth-1, 0))
+          regs(0) := Cat(io.cfg_data, regs(0)(i*cfgDataWidth-1, 0))
         }else{
           regs(0) := Cat(regs(0)(regWidth-1, (i+1)*cfgDataWidth), io.cfg_data, regs(0)(i*cfgDataWidth-1, 0))
         }

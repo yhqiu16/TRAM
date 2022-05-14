@@ -158,7 +158,7 @@ void Graphviz::drawADG(){
             auto name = getAdgNodeName(adgNode->id());
             if(i > 0){
                 if(adgNode->type() == "IB"){
-                    int inport = adgNode->input(0).second; // IB has only one input port, connected to ADG Input port
+                    int inport = adgNode->input(edgeLink.srcPort).second; // IB connected to ADG Input port
                     auto IOname = getAdgNodeName(adgId, inport);
                     ofs << IOname << "->" << name << "->";
                 }else{
@@ -166,7 +166,7 @@ void Graphviz::drawADG(){
                 }               
             }else{
                 if(adgNode->type() == "OB"){
-                    int outport = adgNode->output(0).begin()->second; // OB has only one output port, connected to ADG output port
+                    int outport = adgNode->output(edgeLink.dstPort).begin()->second; // OB connected to ADG output port
                     auto IOname = getAdgNodeName(adgId, outport, false);
                     ofs << name << "->" << IOname;
                 }else{

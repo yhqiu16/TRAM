@@ -1,0 +1,60 @@
+##########################################################
+CGRA-8x8: 1 track, half reged, 2-2-4, output_ib 1
+without optimization
+##########################################################
+
+Parse Operations: ../cgra-mg/src/main/resources/operations.json
+Parse ADG: ../cgra-mg/src/main/resources/cgra_adg.json
+Parse DFG: ../bechmarks/test/arf/arf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+[2022-03-19 17:39:39.628] [warning] Max latency: 12
+Running time(s): 0.017
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/centro-fir/centro-fir.json
+Start mapping >>>>>>
+Pre-map checking passed!
+[2022-03-19 17:39:39.644] [warning] Max latency: 13
+Running time(s): 0.014
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/cosine1/cosine1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+[2022-03-19 17:39:39.663] [warning] Max latency: 10
+Running time(s): 0.017
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/ewf/ewf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+[2022-03-19 17:39:39.680] [warning] #### Smaller violation: 16 ####
+[2022-03-19 17:39:39.694] [warning] #### Smaller violation: 5 ####
+[2022-03-19 17:39:39.816] [warning] #### Smaller violation: 4 ####
+[2022-03-19 17:39:40.145] [warning] Min total latency violation: 4
+[2022-03-19 17:39:40.145] [warning] Current total latency violation: 4
+[2022-03-19 17:39:40.145] [warning] Current max latency violation: 2
+[2022-03-19 17:39:40.145] [warning] Insert pass-through nodes into DFG
+[2022-03-19 17:39:40.145] [warning] DFG node number: 36
+[2022-03-19 17:39:40.161] [warning] Max latency: 15
+Running time(s): 0.496
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/fir1/fir1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+[2022-03-19 17:39:40.173] [warning] Max latency: 14
+Running time(s): 0.01
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/resnet1/resnet1.json
+Start mapping >>>>>>
+Pre-map checking passed!
+[2022-03-19 17:39:40.182] [warning] Max latency: 8
+Running time(s): 0.007
+Succeed to map DFG to ADG!<<<<<<
+
+=============================================
+Succeed to map all the DFGs, number:  6
+=============================================
