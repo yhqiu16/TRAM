@@ -1,0 +1,27 @@
+##########################################################
+CGRA-7x4: 1 track, half reged, 2-2-4, input_ib 2
+##########################################################
+
+Parse Operations: ../cgra-mg/src/main/resources/operations.json
+Parse ADG: ../cgra-mg/src/main/resources/cgra_adg.json
+Parse DFG: ../bechmarks/test/arf/arf.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 10
+Running time(s): 0.316
+Succeed to map DFG to ADG!<<<<<<
+
+Parse DFG: ../bechmarks/test/centro-fir/centro-fir.json
+Start mapping >>>>>>
+Pre-map checking passed!
+Best max latency: 7
+Running time(s): 0.33
+Succeed to map DFG to ADG!<<<<<<
+
+=============================================
+Succeed to map all the DFGs, number:  2
+=============================================
+
+##########################################################
+CGRA-7x6: 1 track, half reged, 2-2-4, input_ib 2
+##########################################################

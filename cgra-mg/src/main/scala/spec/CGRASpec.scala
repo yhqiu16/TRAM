@@ -27,8 +27,10 @@
      "track_reged_mode" -> 1,
      "connect_flexibility" -> connect_flexibility,
      "diag_iopin_connect" -> true,
-     "num_output_ib" -> 3,
-     "num_input_ob" -> 6
+     "num_output_ib" -> 1,
+     "num_input_ob" -> 2,
+     "num_input_ib" -> 1,
+     "num_output_ob" -> 1
    )
 
    def loadSpec(jsonFile : String): Unit ={

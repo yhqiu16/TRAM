@@ -48,17 +48,21 @@ class CGRA(attrs: mutable.Map[String, Any], dumpIR: Boolean) extends Module with
   // ====== IOB-Specific attributes =======//
   val numInOB = getAttrValue("num_input_ob").asInstanceOf[Int] 
   val numOutIB = getAttrValue("num_output_ib").asInstanceOf[Int] // should be even
+  val numOutOB = getAttrValue("num_output_ob").asInstanceOf[Int]
+  val numInIB = getAttrValue("num_input_ib").asInstanceOf[Int]
 
-  apply("num_input", 2*cols)
-  apply("num_output", 2*cols)
+  val numIn = 2*cols*numInIB
+  val numOut = 2*cols*numOutOB
+  apply("num_input", numIn)
+  apply("num_output", numOut)
 
   val io = IO(new Bundle{
     val cfg_en   = Input(Bool())
     val cfg_addr = Input(UInt(cfgAddrWidth.W))
     val cfg_data = Input(UInt(cfgDataWidth.W))
-    val en  = Input(Vec(2*cols, Bool())) // top and buttom row
-    val in  = Input(Vec(2*cols, UInt(dataWidth.W)))
-    val out = Output(Vec(2*cols, UInt(dataWidth.W)))
+    val en  = Input(Vec(cols, Bool())) // top and buttom row
+    val in  = Input(Vec(numIn, UInt(dataWidth.W)))
+    val out = Output(Vec(numOut, UInt(dataWidth.W)))
   })
 
   val gpe_attrs: mutable.Map[String, Any] = mutable.Map(
@@ -144,7 +148,7 @@ class CGRA(attrs: mutable.Map[String, Any], dumpIR: Boolean) extends Module with
       iob_attrs("cfg_blk_index") = index
       iob_attrs("x") = x
       iob_attrs("y") = y
-      iob_attrs("num_input") = 1 // connect to top input
+      iob_attrs("num_input") = numInIB // connect to top input
       iob_attrs("num_output") = numOutIB // connect to GIB
       ibs += Module(new IOB(iob_attrs))
       val smi_id_attr: mutable.Map[String, Any] = mutable.Map(
@@ -172,7 +176,7 @@ class CGRA(attrs: mutable.Map[String, Any], dumpIR: Boolean) extends Module with
       iob_attrs("x") = x
       iob_attrs("y") = y
       iob_attrs("num_input") = numInOB // connect to GIB
-      iob_attrs("num_output") = 1 // connect to top output
+      iob_attrs("num_output") = numOutOB // connect to top output
       obs += Module(new IOB(iob_attrs))
       val smi_id_attr: mutable.Map[String, Any] = mutable.Map(
         "module_id" -> sm_id_offset,
@@ -318,9 +322,14 @@ class CGRA(attrs: mutable.Map[String, Any], dumpIR: Boolean) extends Module with
   // IOB connections to top/buttom I/O and GIB
   ibs.zipWithIndex.map{ case (ib, i) => 
     // ib.io.en := io.en(i)
-    ib.io.in(0) := io.in(i)  
-    connections.append((smi_id("This")(0), "This", i, smi_id("IB")(i), "IB", 0))
-    ib.io.out.zipWithIndex.map{ case (out, j) =>
+//    ib.io.in(0) := io.in(i)
+//    connections.append((smi_id("This")(0), "This", i, smi_id("IB")(i), "IB", 0))
+    ib.io.in.zipWithIndex.foreach{ case (in, j) =>
+      val thisInIdx = i*numInIB+j
+      ib.io.in(j) := io.in(thisInIdx)
+      connections.append((smi_id("This")(0), "This", thisInIdx, smi_id("IB")(i), "IB", j))
+    }
+    ib.io.out.zipWithIndex.foreach{ case (out, j) =>
       if(i < cols){ // top row
         val gibIdx = i
         gibs(gibIdx).io.opinNE(j) := out
@@ -342,8 +351,13 @@ class CGRA(attrs: mutable.Map[String, Any], dumpIR: Boolean) extends Module with
   }
   obs.zipWithIndex.map{ case (ob, i) => 
     // ob.io.en := io.en(i)
-    io.out(i) := ob.io.out(0) 
-    connections.append((smi_id("OB")(i), "OB", 0, smi_id("This")(0), "This", i))
+//    io.out(i) := ob.io.out(0)
+//    connections.append((smi_id("OB")(i), "OB", 0, smi_id("This")(0), "This", i))
+    ob.io.out.zipWithIndex.foreach{ case (out, j) =>
+      val thisOutIdx = i*numOutOB+j
+      io.out(thisOutIdx) := ob.io.out(j)
+      connections.append((smi_id("OB")(i), "OB", j, smi_id("This")(0), "This", thisOutIdx))
+    }
     ob.io.in.zipWithIndex.map{ case (in, j) =>
       if(i < cols){ // top row
         val gibIdx = i

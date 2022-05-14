@@ -123,6 +123,8 @@ void Configuration::getNodeCfgData(ADGNode* node, std::vector<CfgDataPacket>& cf
         cfgMap = getGpeCfgData(dynamic_cast<GPENode*>(node));
     }else if(node->type() == "GIB" || node->type() == "OB"){
         cfgMap = getGibIobCfgData(node);
+    }else if(node->type() == "IB" && node->numInputs() > 1){ // only if input number > 1, there is config data
+        cfgMap = getGibIobCfgData(node);
     }
     if(cfgMap.empty()){
         return;

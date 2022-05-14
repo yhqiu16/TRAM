@@ -22,7 +22,8 @@ public:
     void setMaxIters(int num){ _maxIters = num; }
     void setObjOpt(bool objOpt){ _objOpt = objOpt; }
     // PnR and Data Synchronization
-    bool pnrSync(int maxIters, int temp, bool modifyDfg = true);
+    // return -1 : preMapCheck failed; 0 : fail; 1 : success
+    int pnrSync(int maxIters, int temp, bool modifyDfg = true);
     // PnR, Data Synchronization, and objective optimization
     bool pnrSyncOpt();
     // map the DFG to the ADG, mapper API

@@ -6,6 +6,8 @@
 void Mapping::reset(){
     _dfgNodeAttr.clear();
     _dfgEdgeAttr.clear();
+    _dfgInputAttr.clear();
+    _dfgOutputAttr.clear();
     _adgNodeAttr.clear();
     // _adgLinkAttr.clear();
     _totalViolation = 0;
@@ -358,6 +360,7 @@ bool Mapping::routeDfgEdgeFromSrc(DFGEdge* edge, ADGNode* srcNode, ADGNode* dstN
     // Breadth first search for possible routing path
     // assign the index of the output port of the srcNode
     int srcNodePortIdx = edge->srcPortIdx();
+    int srcNodeId = edge->srcId();
     int dstNodePortIdx;
     int mappedAdgOutPort;
     std::pair<int, int> finalDstNode; // <node-id, inport-index>
@@ -393,10 +396,21 @@ bool Mapping::routeDfgEdgeFromSrc(DFGEdge* edge, ADGNode* srcNode, ADGNode* dstN
                         success = true;
                         finalDstNode = nextId;
                     } else if((dstNode->id() == nextNodeId) || (nextNodeType == "GPE") || // not use GPE node to route
-                              (nextNodeType == "OB") || // cannot route to the dstNode through IOB
-                              visitNodes.count(nextId) || // the <node-id, inport-index> already visited
-                              isAdgNodeInPortUsed(nextNodeId, nextSrcPort)){ // the input port is already used
+                              (nextNodeType == "OB") || // cannot route to the dstNode through IOB                            
+                              visitNodes.count(nextId)){ // the <node-id, inport-index> already visited                              
                         continue;
+                    } else if(isAdgNodeInPortUsed(nextNodeId, nextSrcPort)){ // the input port is already used
+                        // if has the same srcId and srcPortIdx, nextId can still be used 
+                        auto& nextNodeAttr = _adgNodeAttr[nextNodeId];                        
+                        bool conflict = false;
+                        for(auto& edgeLink : nextNodeAttr.dfgEdgePass){
+                            auto passEdge = edgeLink.edge;
+                            if(edgeLink.srcPort == nextSrcPort && (passEdge->srcId() != srcNodeId || passEdge->srcPortIdx() != srcNodePortIdx)){
+                                conflict = true; // the edge with different srcId or srcPortIdx occupied nextSrcPort 
+                                break; 
+                            }
+                        }
+                        if(conflict) continue;
                     }
                 } else{  // route to OB
                     if(nextNodeType == "OB"){
@@ -409,12 +423,22 @@ bool Mapping::routeDfgEdgeFromSrc(DFGEdge* edge, ADGNode* srcNode, ADGNode* dstN
                                 break;
                             }
                         }
-                        if(!success) continue;
-                         
+                        if(!success) continue;                         
                     } else if((nextNodeType == "GPE") || // not use GPE node to route
-                              visitNodes.count(nextId) || // the <node-id, inport-index> already visited
-                              isAdgNodeInPortUsed(nextNodeId, nextSrcPort)){ // the input port is already used
+                              visitNodes.count(nextId)){ // the <node-id, inport-index> already visited                              
                         continue;
+                    } else if(isAdgNodeInPortUsed(nextNodeId, nextSrcPort)){ // the input port is already used
+                        // if has the same srcId and srcPortIdx, nextId can still be used 
+                        auto& nextNodeAttr = _adgNodeAttr[nextNodeId];                        
+                        bool conflict = false;
+                        for(auto& edgeLink : nextNodeAttr.dfgEdgePass){
+                            auto passEdge = edgeLink.edge;
+                            if(edgeLink.srcPort == nextSrcPort && (passEdge->srcId() != srcNodeId || passEdge->srcPortIdx() != srcNodePortIdx)){
+                                conflict = true; // the edge with different srcId or srcPortIdx occupied nextSrcPort 
+                                break; 
+                            }
+                        }
+                        if(conflict) continue;
                     }
                 }                
                 nodeQue.push(std::make_pair(nextNode, nextSrcPort)); // cache in queue
@@ -496,6 +520,7 @@ bool Mapping::routeDfgEdgeFromDst(DFGEdge* edge, ADGNode* srcNode, ADGNode* dstN
     // Breadth first search for possible routing path
     // assign the index of the output port of the srcNode
     int srcNodeOutPortIdx = edge->srcPortIdx();
+    int srcNodeId = edge->srcId();
     int srcNodeInPortIdx = -1;
     int mappedAdgInPort;
     std::pair<int, int> finalSrcNode; // <node-id, outport-index>
@@ -531,9 +556,20 @@ bool Mapping::routeDfgEdgeFromDst(DFGEdge* edge, ADGNode* srcNode, ADGNode* dstN
                     finalSrcNode = nextId;
                 } else if((srcNode->id() == nextNodeId) || (nextNodeType == "GPE") || // not use GPE node to route
                           (nextNodeType == "IB") || // cannot route to the srcNode through IOB
-                          visitNodes.count(nextId) || // the <node-id, outport-index> already visited
-                          isAdgNodeOutPortUsed(nextNodeId, nextDstPort)){ // the output port is already used
+                          visitNodes.count(nextId)){ // the <node-id, outport-index> already visited                          
                     continue;
+                } else if(isAdgNodeInPortUsed(nextNodeId, nextDstPort)){ // the output port is already used
+                    // if has the same srcId and srcPortIdx, nextId can still be used 
+                    auto& nextNodeAttr = _adgNodeAttr[nextNodeId];                        
+                    bool conflict = false;
+                    for(auto& edgeLink : nextNodeAttr.dfgEdgePass){
+                        auto passEdge = edgeLink.edge;
+                        if(edgeLink.dstPort == nextDstPort && (passEdge->srcId() != srcNodeId || passEdge->srcPortIdx() != srcNodeOutPortIdx)){
+                            conflict = true; // the edge with different srcId or srcPortIdx occupied nextDstPort 
+                            break; 
+                        }
+                    }
+                    if(conflict) continue;
                 }
             } else{  // route to IB
                 if(nextNodeType == "IB"){
@@ -560,9 +596,20 @@ bool Mapping::routeDfgEdgeFromDst(DFGEdge* edge, ADGNode* srcNode, ADGNode* dstN
                     }  
                     if(!success) continue;                   
                 } else if((nextNodeType == "GPE") || // not use GPE node to route
-                          visitNodes.count(nextId) || // the <node-id, outport-index> already visited
-                          isAdgNodeOutPortUsed(nextNodeId, nextDstPort)){ // the output port is already used
+                          visitNodes.count(nextId)){ // the <node-id, outport-index> already visited                          
                     continue;
+                } else if(isAdgNodeInPortUsed(nextNodeId, nextDstPort)){ // the output port is already used
+                    // if has the same srcId and srcPortIdx, nextId can still be used 
+                    auto& nextNodeAttr = _adgNodeAttr[nextNodeId];                        
+                    bool conflict = false;
+                    for(auto& edgeLink : nextNodeAttr.dfgEdgePass){
+                        auto passEdge = edgeLink.edge;
+                        if(edgeLink.dstPort == nextDstPort && (passEdge->srcId() != srcNodeId || passEdge->srcPortIdx() != srcNodeOutPortIdx)){
+                            conflict = true; // the edge with different srcId or srcPortIdx occupied nextDstPort 
+                            break; 
+                        }
+                    }
+                    if(conflict) continue;
                 }
             }                
             nodeQue.push(std::make_pair(nextNode, nextDstPort)); // cache in queue
@@ -777,15 +824,23 @@ void Mapping::assignDfgIO(){
         // IB has only one input port, connected to ADG input port
         // all the edges with the same src routing to the same IB
         int eid = *(elem.second.begin());
-        auto ib = _dfgEdgeAttr[eid].edgeLinks.begin()->adgNode; // ADG IB node
-        int inport = ib->input(0).second; 
+        // auto ib = _dfgEdgeAttr[eid].edgeLinks.begin()->adgNode; // ADG IB node
+        // int inport = ib->input(0).second; 
+        auto ibLinkAttr = _dfgEdgeAttr[eid].edgeLinks.begin();
+        auto ib = ibLinkAttr->adgNode; // ADG IB node
+        auto srcPort = ibLinkAttr->srcPort; // ADG IB source port
+        int inport = ib->input(srcPort).second;
         _dfgInputAttr[elem.first].adgIOPort = inport;
     }
     // assign output ports
     for(auto& elem : _dfg->outputEdges()){
         // OB has only one output port, connected to ADG output port
-        auto ob = _dfgEdgeAttr[elem.second].edgeLinks.rbegin()->adgNode; // ADG OB node
-        int outport = ob->output(0).begin()->second;
+        // auto ob = _dfgEdgeAttr[elem.second].edgeLinks.rbegin()->adgNode; // ADG OB node
+        // int outport = ob->output(0).begin()->second;
+        auto obLinkAttr = _dfgEdgeAttr[elem.second].edgeLinks.rbegin();
+        auto ob = obLinkAttr->adgNode; // ADG OB node
+        auto dstPort = obLinkAttr->dstPort; // ADG OB dest port
+        int outport = ob->output(dstPort).begin()->second;
         _dfgOutputAttr[elem.first].adgIOPort = outport;
     }
 }
