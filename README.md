@@ -28,7 +28,7 @@ Template-based Reconfigurable Architecture Modeling Framework, including:
 ### Clone the repository
 
 ```sh
-git clone https://github.com/yhtmp/TRAM
+git clone https://github.com/yhqiu16/TRAM
 cd TRAM
 ```
 
