@@ -16,7 +16,7 @@ CGRA mapping flow including placement and routing, data synchronization, optimiz
 ### Clone the repository
 
 ```sh
-git clone https://github.com/yhtmp/TRAM
+git clone https://github.com/yhqiu16/TRAM
 cd TRAM/cgra-compiler
 ```
 
