@@ -130,7 +130,7 @@ bool Mapping::mapDfgNode(DFGNode* dfgNode, ADGNode* adgNode){
     DFGNodeAttr dfgAttr;
     dfgAttr.adgNode = adgNode;
     _dfgNodeAttr[dfgNodeId] = dfgAttr;
-    ADGNodeAttr adgAttr;
+    ADGNodeAttr &adgAttr = _adgNodeAttr[adgNode->id()];
     adgAttr.dfgNode = dfgNode;
     // one operand is immediate and the operands are not commutative
     if(dfgNode->hasImm() && !dfgNode->commutative()){ // assign constant port
@@ -142,7 +142,7 @@ bool Mapping::mapDfgNode(DFGNode* dfgNode, ADGNode* adgNode){
             adgAttr.inPortUsed[inPort] = true; // set all the input ports connetced to this operand as used
         }
     }
-    _adgNodeAttr[adgNode->id()] = adgAttr;
+//     _adgNodeAttr[adgNode->id()] = adgAttr;
     _numNodeMapped++;
     return true;
 }
